@@ -1,0 +1,21 @@
+{
+  "name": "freeflix",
+  "version": "1.0.0",
+  "description": "Open source video streaming server",
+  "type": "module",
+  "scripts": {
+    "server": "node server/index.js",
+    "dev": "cd Front && npm run dev",
+    "build": "cd Front && npm run build",
+    "start": "npm run server"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mime-types": "^2.1.35"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

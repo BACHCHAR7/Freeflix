@@ -1,0 +1,16 @@
+node_modules/
+.thumbnails/
+.DS_Store
+*.log
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.mp3
+*.ogg
+*.flac
+*.aac
+*.m4a
+package-lock.json
