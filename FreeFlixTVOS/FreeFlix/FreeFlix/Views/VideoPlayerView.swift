@@ -5,11 +5,17 @@ struct VideoPlayerView: View {
     let onDismiss: () -> Void
     
     var body: some View {
-        if let url = APIService.shared.streamURL(for: video) {
-            FreeFlixPlayerView(url: url, onDismiss: onDismiss)
-        } else {
-            Color.black
-                .onAppear { onDismiss() }
+        ZStack {
+            Color.black.ignoresSafeArea(.all)
+            
+            if let url = APIService.shared.streamURL(for: video) {
+                FreeFlixPlayerView(url: url, onDismiss: onDismiss)
+            } else {
+                Color.black
+                    .onAppear { onDismiss() }
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea(.all)
     }
 }

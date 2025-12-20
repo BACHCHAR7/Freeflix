@@ -41,9 +41,14 @@ final class APIService {
     
     func streamURL(for video: Video) -> URL? {
         let encodedPath = encodePathForURL(video.path)
-        let urlString = "\(baseURL)/api/stream/\(encodedPath)"
-        print("FreeFlix: Stream URL = \(urlString)")
+        let urlString = "\(baseURL)/api/hls/\(encodedPath)/master.m3u8"
+        print("FreeFlix: HLS URL = \(urlString)")
         return URL(string: urlString)
+    }
+    
+    func directStreamURL(for video: Video) -> URL? {
+        let encodedPath = encodePathForURL(video.path)
+        return URL(string: "\(baseURL)/api/stream/\(encodedPath)")
     }
     
     private func encodePathForURL(_ path: String) -> String {

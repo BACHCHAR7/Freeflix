@@ -16,23 +16,29 @@ struct FreeFlixPlayerView: View {
         KSOptions.isLoopPlay = false
         KSOptions.logLevel = .warning
         KSOptions.hardwareDecode = true
-        KSOptions.preferredForwardBufferDuration = 8.0
-        KSOptions.maxBufferDuration = 60.0
+        KSOptions.preferredForwardBufferDuration = 15.0
+        KSOptions.maxBufferDuration = 120.0
         
         let opts = KSOptions()
-        opts.preferredForwardBufferDuration = 8.0
-        opts.maxBufferDuration = 60.0
+        opts.preferredForwardBufferDuration = 15.0
+        opts.maxBufferDuration = 120.0
         opts.hardwareDecode = true
         opts.isSecondOpen = true
-        opts.probesize = 5_000_000
-        opts.maxAnalyzeDuration = 3_000_000
-        opts.formatContextOptions["buffer_size"] = 32768 * 16
-        opts.formatContextOptions["rw_timeout"] = 30_000_000
+        opts.probesize = 10_000_000
+        opts.maxAnalyzeDuration = 5_000_000
+        opts.formatContextOptions["buffer_size"] = 1024 * 1024
+        opts.formatContextOptions["rw_timeout"] = 60_000_000
+        opts.formatContextOptions["reconnect"] = 1
+        opts.formatContextOptions["reconnect_streamed"] = 1
+        opts.formatContextOptions["reconnect_delay_max"] = 5
         self.options = opts
     }
     
     var body: some View {
         KSVideoPlayerView(url: url, options: options)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea(.all)
+            .background(Color.black)
             .onDisappear {
                 onDismiss()
             }
