@@ -2,6 +2,8 @@
 
 Self-hosted video streaming server with a Netflix-like interface. Stream your personal video library to your Apple TV, web browser, or any device on your local network.
 
+![FreeFlix](Graphics/intro.gif)
+
 ## Features
 
 - Auto-discovery of video files organized by category and genre
